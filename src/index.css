@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  @apply bg-[#f9741644] w-2 dark:bg-[#2a3142de];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#f9741663] rounded-full hover:bg-[#f97416ce] dark:bg-[#0ea4e935] dark:hover:bg-[#0ea4e9d2]  delay-100;
+}
+
+.main-bg {
+  @apply bg-[url('./assets/bg-image.png')] bg-center bg-repeat-y bg-contain dark:bg-[url('./assets/bg-dark-image.png')] dark:bg-center dark:bg-repeat-y dark:bg-contain;
+}
+
+@media screen and (max-width: 1020px) {
+  .main-bg {
+    @apply bg-cover dark:bg-cover;
+  }
+}
+
+.social-media {
+  @apply shadow-md dark:bg-slate-700 bg-white rounded-[10px] p-4 dark:hover:bg-slate-600 hover:bg-gray-200 duration-300;
+}
+
+.social-media svg {
+  @apply text-orange-600 dark:text-sky-500 text-[1.3rem];
+}
+
+.social-media:hover {
+  @apply shadow-lg;
+}
+
+.section {
+  @apply w-[94%] mx-auto md:w-[90%] lg:w-[75%];
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Billy Joel Ballola",
+    "short_name": "billyjoel",
+    "icons": [
+        {
+            "src": "/black.png",
+            "sizes": "500x500",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+}
