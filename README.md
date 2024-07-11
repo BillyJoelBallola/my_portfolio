@@ -1,3 +1,3 @@
 # My Portfolio
 
-Visit the portfolio output here in [Link text Here](billyjoel.netlify.app).
+Visit the portfolio output here in [billyjoel.netlify.app](billyjoel.netlify.app).
