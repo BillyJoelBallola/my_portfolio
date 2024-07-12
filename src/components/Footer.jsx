@@ -11,14 +11,8 @@ const Footer = () => {
           GET IN TOUCH
         </h2>
         <p data-aos="fade-up">
-          You can send me a message through my social media accounts and if
-          about business, please contact me through my Gmail account.{" "}
-          <a
-            href="mailto:billyjoelballola27@gmail.com"
-            className="text-orange-500 dark:text-sky-500 hover:underline"
-          >
-            billyjoelballola27@gmail.com
-          </a>
+          For other contacts, you can send me a message through my social media
+          accounts.
         </p>
       </div>
       <div className="flex justify-center gap-10">

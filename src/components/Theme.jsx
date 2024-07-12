@@ -5,8 +5,8 @@ const ActiveIcon = ({ isDarkMode }) => {
   const activeTheme = localStorage.getItem("colorTheme");
   let result = null;
 
-  const moon = <BsMoonFill className="text-sky-300" />;
-  const sun = <BsSunFill className="text-orange-600" />;
+  const moon = <BsMoonFill className="text-sky-500" />;
+  const sun = <BsSunFill className="text-orange-500" />;
 
   if (activeTheme === "dark" && isDarkMode === true) {
     result = moon;
@@ -47,7 +47,8 @@ const Theme = () => {
 
   return (
     <button
-      className="absolute right-8 top-8 md:right-16 md:top-8 text-2xl bg-[#efefeffb] dark:bg-slate-800 p-2 rounded-full duration-200"
+      data-aos="zoom-in"
+      className="absolute top-8 right-3 md:right-5 lg:right-10 md:top-8 text-2xl bg-[#efefeffb] dark:bg-slate-800 p-2 rounded-full duration-200"
       onClick={turnOnDarkMode}
     >
       <ActiveIcon isDarkMode={isDarkMode} />

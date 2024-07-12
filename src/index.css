@@ -4,8 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+*,
+html,
+body {
   scroll-behavior: smooth;
+  scroll-padding-top: 180px;
 }
 
 ::-webkit-scrollbar {
@@ -39,5 +42,5 @@
 }
 
 .section {
-  @apply w-[94%] mx-auto md:w-[90%] lg:w-[75%];
+  @apply mx-auto w-[94%] md:w-[90%] lg:w-[75%];
 }

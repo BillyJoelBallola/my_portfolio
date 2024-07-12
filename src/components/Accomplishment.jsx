@@ -10,7 +10,7 @@ const Accomplishment = () => {
         </h2>
         <p data-aos="fade-up">
           These are all of my achievements through honing my skills in different
-          fields of Information Technology
+          fields of Information Technology.
         </p>
       </div>
       {accomplishments.map((info, idx) => (
