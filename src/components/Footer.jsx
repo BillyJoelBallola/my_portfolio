@@ -25,7 +25,13 @@ const Footer = () => {
         >
           <FaFacebookSquare />
         </a>
-        <a href="/" className="social-media" data-aos="zoom-in">
+        <a
+          href="www.linkedin.com/in/billy-joel-ballola-23b44a319"
+          className="social-media"
+          rel="noreferrer"
+          data-aos="zoom-in"
+          target="_blank"
+        >
           <FaLinkedin />
         </a>
         <a
