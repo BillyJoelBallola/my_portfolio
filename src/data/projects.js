@@ -1,12 +1,12 @@
 import image1 from "../assets/calc.jpg";
 import image2 from "../assets/landing-page.jpg";
 import image3 from "../assets/splitter.jpg";
-import image4 from "../assets/school-reg.jpg";
 import image5 from "../assets/memories.jpg";
 import image6 from "../assets/harmony.jpg";
 import image7 from "../assets/info-system.jpg";
 import image8 from "../assets/zodiac.jpg";
 import image9 from "../assets/rbim.png";
+import image10 from "../assets/link_sharing.png";
 
 const projects = [
   {
@@ -28,13 +28,6 @@ const projects = [
       "This project uses HTML, CSS, and Javascript to create a tip splitter that works perfectly.",
     image: image3,
     tags: ["HTML", "SCSS", "Javascript"],
-  },
-  {
-    title: "Student Registration",
-    description:
-      "This registration system was created as an educational project utilizing HTML and CSS along with the Flask framework.",
-    image: image4,
-    tags: ["HTML", "CSS", "PYTHON", "SQL"],
   },
   {
     title: "Memories Diary Website",
@@ -63,6 +56,13 @@ const projects = [
       "This project is a static webpage created with HTML and CSS that allows users to explore the meanings of each sign of the zodiac.",
     image: image8,
     tags: ["HTML", "CSS"],
+  },
+  {
+    title: "Links Sharing",
+    description:
+      "This project is a personal project, user can share their custom made link profile. It is built using TailwindCSS and ReactJS.",
+    image: image10,
+    tags: ["ReactJS", "TailwindCSS"],
   },
   {
     title: "RBIM System",

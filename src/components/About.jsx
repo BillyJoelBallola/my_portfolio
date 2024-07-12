@@ -12,9 +12,9 @@ const About = () => {
           <span className="text-orange-500 dark:text-sky-500">
             Billy Joel Ballola
           </span>
-          , I recently graduated with Bachelor's Degree in Information. My
-          interest in programming started when I got to college. Now I want to
-          be a web developer focused in client-side programming.
+          , I recently graduated with Bachelor's Degree in Information
+          Technology. My interest in programming started when I got to college.
+          Now I want to be a web developer focused in client-side programming.
         </p>
       </div>
       <div
