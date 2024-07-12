@@ -17,7 +17,7 @@ const projects = [
     tags: ["HTML", "CSS", "Javascript"],
   },
   {
-    title: "Mock-up Ladning Page",
+    title: "Mock-up Landing Page",
     description: "This project is an HTML and CSS-built static website.",
     image: image2,
     tags: ["HTML", "CSS"],
