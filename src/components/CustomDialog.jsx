@@ -4,7 +4,7 @@ const CustomDialog = ({ visible, setVisible, info }) => {
   const { title, description, image, tags } = info;
 
   return (
-    <div className="fixed grid place-items-center inset-0 bg-black/80 z-20 pointer-events-auto">
+    <div className="fixed grid place-items-center inset-0 bg-black/80 z-50 pointer-events-auto">
       <div className="bg-white dark:bg-slate-800 text-black dark:text-white rounded-lg p-6 absolute z-30 w-10/12 md:w-2/3 lg:w-1/2">
         <div className="flex items-center justify-between">
           <h3 className="text-lg font-semibold">{title}</h3>

@@ -11,7 +11,7 @@ const Header = () => {
           HELLO, I AM
         </span>
         <h1
-          className="font-bold text-5xl md:text-7xl tracking-widest whitespace-nowrap"
+          className="font-bold text-5xl md:text-7xl tracking-normal md:tracking-widest whitespace-nowrap"
           data-aos="fade-up"
         >
           BILLY JOEL

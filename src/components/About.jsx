@@ -19,7 +19,7 @@ const About = () => {
       </div>
       <div
         data-aos="fade-up"
-        className="md:whitespace-nowrap flex flex-wrap p-6 gap-2 md:gap-4 rounded-lg text-black border dark:border-0 bg-white dark:bg-slate-700 dark:text-white shadow-md md:w-[60%] mt-8 mx-auto"
+        className="whitespace-normal flex flex-col md:flex-row p-6 gap-2 md:gap-4 rounded-lg text-black border dark:border-0 bg-white dark:bg-slate-700 dark:text-white shadow-md w-[90%] md:w[70%] lg:w-[65%] mt-8 mx-auto"
       >
         <ul className="flex-1 flex flex-col gap-2">
           <li>

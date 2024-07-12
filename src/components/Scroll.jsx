@@ -19,7 +19,7 @@ const Scroll = () => {
   }, []);
 
   return (
-    <div className="whitespace-nowrap fixed bottom-16 right-3 md:right-5 lg:right-10 z-20">
+    <div className="whitespace-nowrap fixed bottom-8 md:bottom-16 right-5 lg:right-10 z-20">
       <a
         href={`${scrollPosition <= 300 ? "#about" : "#header"}`}
         className="text-orange-500 dark:text-sky-500 text-xl"
