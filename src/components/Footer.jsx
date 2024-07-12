@@ -26,7 +26,7 @@ const Footer = () => {
           <FaFacebookSquare />
         </a>
         <a
-          href="www.linkedin.com/in/billy-joel-ballola-23b44a319"
+          href="https://www.linkedin.com/in/billy-joel-ballola-23b44a319"
           className="social-media"
           rel="noreferrer"
           data-aos="zoom-in"
