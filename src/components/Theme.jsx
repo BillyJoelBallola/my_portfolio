@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsMoonFill, BsSunFill } from "react-icons/bs";
 
 const ActiveIcon = ({ isDarkMode }) => {
@@ -48,7 +48,7 @@ const Theme = () => {
   return (
     <button
       data-aos="zoom-in"
-      className="absolute right-5 lg:right-10 top-8 text-2xl bg-[#efefeffb] dark:bg-slate-800 p-2 rounded-full duration-200"
+      className="absolute z-50 right-5 lg:right-10 top-8 text-2xl bg-[#efefeffb] dark:bg-slate-800 p-2 rounded-full duration-200"
       onClick={turnOnDarkMode}
     >
       <ActiveIcon isDarkMode={isDarkMode} />
