@@ -17,7 +17,7 @@ const About = () => {
           Now I want to be a web developer focused in client-side programming.
         </p>
       </div>
-      <div
+      {/* <div
         data-aos="fade-up"
         className="whitespace-normal flex flex-col md:flex-row p-6 gap-2 md:gap-4 rounded-lg text-black border dark:border-0 bg-white dark:bg-slate-700 dark:text-white shadow-md w-[90%] md:w[70%] lg:w-[65%] mt-8 mx-auto"
       >
@@ -46,7 +46,7 @@ const About = () => {
             <span className="font-semibold">Address:</span> Laguna, PH
           </li>
         </ul>
-      </div>
+      </div> */}
     </section>
   );
 };
