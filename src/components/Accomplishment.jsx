@@ -3,7 +3,7 @@ import accomplishments from "../data/accomplishment";
 
 const Accomplishment = () => {
   return (
-    <section className="section mt-[100px]">
+    <section className="section">
       <div className="text-center mb-8 w-auto md:w-[50%] mx-auto">
         <h2 className="font-semibold text-lg mb-2" data-aos="fade-up">
           MY ACCOMPLISHMENTS

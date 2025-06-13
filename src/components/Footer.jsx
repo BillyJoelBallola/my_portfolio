@@ -1,18 +1,16 @@
-import React from "react";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <section className="section mt-[100px]">
+    <section className="section">
       <div className="text-center mb-8 w-auto md:w-[50%] mx-auto">
         <h2 className="font-semibold text-lg mb-2" data-aos="fade-up">
           GET IN TOUCH
         </h2>
         <p data-aos="fade-up">
-          For other contacts, you can send me a message through my social media
-          accounts.
+          To connect with me, you can send me a message through my social media
+          accounts or email me through my g-mail.
         </p>
       </div>
       <div className="flex justify-center gap-10">
@@ -26,15 +24,6 @@ const Footer = () => {
           <FaFacebookSquare />
         </a>
         <a
-          href="https://www.linkedin.com/in/billy-joel-ballola-23b44a319"
-          className="social-media"
-          rel="noreferrer"
-          data-aos="zoom-in"
-          target="_blank"
-        >
-          <FaLinkedin />
-        </a>
-        <a
           href="https://www.instagram.com/blly_joel"
           className="social-media"
           data-aos="zoom-in"
@@ -42,6 +31,14 @@ const Footer = () => {
           rel="noreferrer"
         >
           <FaInstagram />
+        </a>
+        <a
+          href="mailto:billyjoelballola27@gmail.com"
+          className="social-media"
+          data-aos="zoom-in"
+          rel="noreferrer"
+        >
+          <MdOutlineMailOutline />
         </a>
       </div>
     </section>

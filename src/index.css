@@ -9,6 +9,8 @@ html,
 body {
   scroll-behavior: smooth;
   scroll-padding-top: 180px;
+  /* #020617 dark */
+  /* #f8fafc light */
 }
 
 ::-webkit-scrollbar {
@@ -30,15 +32,11 @@ body {
 }
 
 .social-media {
-  @apply shadow-md dark:bg-slate-700 bg-white rounded-[10px] p-4 dark:hover:bg-slate-600 hover:bg-gray-200 duration-300;
+  @apply shadow-md border border-slate-100 dark:border-slate-700 dark:bg-slate-700 bg-white rounded-[10px] p-4 dark:hover:bg-slate-600 hover:bg-gray-200 duration-300;
 }
 
 .social-media svg {
   @apply text-orange-600 dark:text-sky-500 text-[1.3rem];
-}
-
-.social-media:hover {
-  @apply shadow-lg;
 }
 
 .section {

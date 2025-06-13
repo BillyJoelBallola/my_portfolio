@@ -42,17 +42,17 @@ const Projects = () => {
                 key={index}
               >
                 <div className="overflow-hidden relative group cursor-pointer">
-                  <div className="group-hover:opacity-100 opacity-0 absolute inset-0 duration-300 grid place-items-center bg-black/60">
-                    <button
-                      className="text-4xl text-white font-semibold"
-                      onClick={() => {
-                        setShowDialog(true);
-                        setSelectedProjectInfo(project);
-                      }}
-                    >
+                  <button
+                    onClick={() => {
+                      setShowDialog(true);
+                      setSelectedProjectInfo(project);
+                    }}
+                    className="group-hover:opacity-100 opacity-0 absolute inset-0 duration-300 grid place-items-center bg-black/60"
+                  >
+                    <div className="text-4xl text-white font-semibold">
                       <GoZoomIn />
-                    </button>
-                  </div>
+                    </div>
+                  </button>
                   <img src={project.image} alt="project-image" />
                 </div>
                 <div className="p-3 bg-white dark:bg-slate-700">
@@ -63,7 +63,7 @@ const Projects = () => {
                     {project.tags.map((tag, index) => (
                       <div
                         key={index}
-                        className="text-xs bg-gray-200 text-slate-800 dark:bg-slate-600 dark:text-slate-100 py-1 px-2 rounded-lg shadow-lg cursor-pointer duration-200 ease-in-out hover:bg-gray-700 dark:hover:bg-slate-100 hover:text-white dark:hover:text-black"
+                        className="text-xs bg-gray-200 text-slate-800 dark:bg-slate-600 dark:text-slate-100 py-1 px-2 rounded-lg cursor-pointer duration-200 ease-in-out hover:bg-gray-700 dark:hover:bg-slate-100 hover:text-white dark:hover:text-black"
                       >
                         {tag}
                       </div>

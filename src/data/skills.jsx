@@ -8,6 +8,7 @@ import {
 import { RiReactjsLine, RiNodejsLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { GrMysql } from "react-icons/gr";
+import { RiNextjsLine } from "react-icons/ri";
 
 export const skills = [
   {
@@ -33,6 +34,10 @@ export const skills = [
   {
     name: "ReactJS",
     icon: <RiReactjsLine />,
+  },
+  {
+    name: "NextJS",
+    icon: <RiNextjsLine />,
   },
   {
     name: "NodeJS",

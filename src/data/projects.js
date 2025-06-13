@@ -1,74 +1,68 @@
-import image1 from "../assets/calc.jpg";
-import image2 from "../assets/landing-page.jpg";
-import image3 from "../assets/splitter.jpg";
-import image5 from "../assets/memories.jpg";
-import image6 from "../assets/harmony.jpg";
-import image7 from "../assets/info-system.jpg";
-import image8 from "../assets/zodiac.jpg";
-import image9 from "../assets/rbim.png";
-import image10 from "../assets/link_sharing.png";
+import diary from "../assets/memories.jpg";
+import harmony from "../assets/harmony.jpg";
+import sms from "../assets/info-system.jpg";
+import rbim from "../assets/rbim.png";
+import linkSharing from "../assets/link_sharing.png";
+import trackr from "../assets/trackr.png";
+import pluma from "../assets/pluma.png";
+import readingRealm from "../assets/reading_realm.png";
 
 const projects = [
   {
-    title: "Calculator",
+    title: "Expense Tracker App",
     description:
-      "This project utilizes JavaScript, HTML, and CSS for the user interface to create a fully functional calculator. There are three theme variations as well.",
-    image: image1,
-    tags: ["HTML", "CSS", "Javascript"],
+      "Trackr is a full-stack Progressive Web Application (PWA) designed to help users efficiently monitor and manage their daily expenses. Built with Next.js, the app features a clean, responsive interface and leverages a PostgreSQL database for storing transactional data securely. Users can categorize expenses, view insightful summaries, and access the app across devices—even offline.",
+    image: trackr,
+    tags: ["NextJS", "Typescript", "Postgres"],
   },
   {
-    title: "Mock-up Landing Page",
-    description: "This project is an HTML and CSS-built static website.",
-    image: image2,
-    tags: ["HTML", "CSS"],
+    title: "Reading Realm",
+    description:
+      "Reading Realm is a web-based digital library platform that allows users to explore and read a wide range of books online. With a simple and user-friendly interface built using ReactJS, the app consumes a RESTful API to fetch and organize content dynamically. It aims to promote reading by providing easy access to literature in a clean and engaging environment.",
+    image: readingRealm,
+    tags: ["ReactJS", "RestAPI"],
   },
   {
-    title: "Splitter",
+    title: "Pluma",
     description:
-      "This project uses HTML, CSS, and Javascript to create a tip splitter that works perfectly.",
-    image: image3,
-    tags: ["HTML", "SCSS", "Javascript"],
+      "Pluma is a modern, minimalist note-taking web application crafted for productivity and ease of use. Developed with Next.js and TypeScript, it allows users to create, edit, and manage their notes seamlessly. The application also uses PostgreSQL for persistent data storage and is designed with a sleek UI to enhance the user experience.",
+    image: pluma,
+    tags: ["NextJS", "Typescript", "Postgres"],
+  },
+  {
+    title: "Links Sharing",
+    description:
+      "Links Sharing is a personal project that allows users to create and customize their own link-sharing profiles—similar to services like Linktree. Built with ReactJS and styled using TailwindCSS, the application provides a sleek and fast interface where users can manage links to their social media, websites, or other content hubs.",
+    image: linkSharing,
+    tags: ["ReactJS", "TailwindCSS"],
   },
   {
     title: "Memories Diary Website",
     description:
-      "Memories is a useful online tool that uses PHP, JQuery, HTML, and CSS to build a digital diary.",
-    image: image5,
+      "Memories is a personal online diary application developed using PHP, jQuery, HTML, and CSS. It allows users to securely log their daily thoughts and activities, with options to categorize and search entries. The application offers a nostalgic and user-centric design, ideal for maintaining a digital journal with ease and privacy.",
+    image: diary,
     tags: ["PHP", "SQL", "JQUERY"],
   },
   {
     title: "Harmony's Kitchen",
     description:
-      "This is a school project that highlights Harmony's Kitchen's products and services.",
-    image: image6,
-    tags: ["PHP", "SQL", "JQUERY"],
+      "Harmony's Kitchen is a promotional website created as a school project to showcase the culinary products and services offered by the fictional business. Built using PHP, MySQL, and jQuery, the site features a responsive layout, product listings, and an admin interface for content management. It simulates a real-world food service site experience.",
+    image: harmony,
+    tags: ["PHP", "MySQL", "JQUERY"],
   },
   {
     title: "School Information System",
     description:
-      "This information system, which was constructed with HTML and CSS and the Flask framework.",
-    image: image7,
-    tags: ["HTML", "CSS", "PYTHON", "SQL"],
+      "This School Information System is a comprehensive academic records management platform developed using Flask (Python), HTML, CSS, and MySQL. It handles student information, grades, and class schedules. The system aims to improve administrative workflows and ensure organized recordkeeping for educational institutions.",
+    image: sms,
+    tags: ["HTML", "CSS", "PYTHON", "MySQL"],
   },
-  {
-    title: "Zodiac Signs",
-    description:
-      "This project is a static webpage created with HTML and CSS that allows users to explore the meanings of each sign of the zodiac.",
-    image: image8,
-    tags: ["HTML", "CSS"],
-  },
-  {
-    title: "Links Sharing",
-    description:
-      "This project is a personal project, user can share their custom made link profile. It is built using TailwindCSS and ReactJS.",
-    image: image10,
-    tags: ["ReactJS", "TailwindCSS"],
-  },
+
   {
     title: "RBIM System",
     description:
-      "This project, which is an enhancement to our municipality's outdated system, serves as my capstone project and fulfills the requirements for my undergraduate degree. MySQL, NodeJS, and ReactJS are used in its development.",
-    image: image9,
+      "The RBIM System is a capstone project developed to modernize and replace the existing manual system used in a local municipality. Designed with ReactJS, NodeJS, and MySQL, the system enables efficient record tracking, resident profiling, and barangay document processing. It was submitted to fulfill undergraduate academic requirements.",
+    image: rbim,
     tags: ["ReactJS", "NodeJS", "MySQL"],
   },
 ];
