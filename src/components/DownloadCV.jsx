@@ -1,6 +1,6 @@
 import React from "react";
 import { GrDocumentUser } from "react-icons/gr";
-import cvFile from "../assets/BALLOLA_BILLY_JOEL-RESUME.pdf";
+import cvFile from "../assets/BALLOLA_BILLY_JOEL_RESUME.pdf";
 
 const DownloadCV = () => {
   return (
