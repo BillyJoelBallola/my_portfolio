@@ -50,14 +50,13 @@ const projects = [
     image: harmony,
     tags: ["PHP", "MySQL", "JQUERY"],
   },
-  {
-    title: "School Information System",
-    description:
-      "This School Information System is a comprehensive academic records management platform developed using Flask (Python), HTML, CSS, and MySQL. It handles student information, grades, and class schedules. The system aims to improve administrative workflows and ensure organized recordkeeping for educational institutions.",
-    image: sms,
-    tags: ["HTML", "CSS", "PYTHON", "MySQL"],
-  },
-
+  // {
+  //   title: "School Information System",
+  //   description:
+  //     "This School Information System is a comprehensive academic records management platform developed using Flask (Python), HTML, CSS, and MySQL. It handles student information, grades, and class schedules. The system aims to improve administrative workflows and ensure organized recordkeeping for educational institutions.",
+  //   image: sms,
+  //   tags: ["HTML", "CSS", "PYTHON", "MySQL"],
+  // },
   {
     title: "RBIM System",
     description:
