@@ -44,7 +44,7 @@ const CustomDialog = ({ visible, setVisible, info }) => {
             <span className="text-teal-500">&#123;</span>
             <br />
             <br />
-            <span className="text-green-700 dark:text-yellow-500">tag: </span>
+            <span className="text-green-700 dark:text-yellow-500">tags: </span>
             <span className="text-orange-500 dark:text-blue-500">&#91;</span>
             {tags.map((tag, index) => (
               <>
