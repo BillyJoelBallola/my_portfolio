@@ -33,10 +33,14 @@ const CustomDialog = ({ visible, setVisible, info }) => {
           </button>
         </div>
         <div className="flex rounded-lg overflow-hidden mt-4">
-          <img src={image} alt="project image" className="object-cover" />
+          <img
+            src={image}
+            alt="project image"
+            className="object-cover object-center w-full aspect-auto"
+          />
         </div>
-        <div className="mt-4 p-4 bg-neutral-100 dark:bg-neutral-900 rounded-md">
-          <pre className="font-mono text-sm whitespace-pre-wrap break-words overflow-x-auto">
+        <div className="mt-4 p-4 bg-neutral-200/50 dark:bg-neutral-900 rounded-md">
+          <div className="text-sm whitespace-pre-wrap break-words overflow-x-auto">
             <span className="text-teal-500">&#123;</span>
             <br />
             <br />
@@ -64,24 +68,8 @@ const CustomDialog = ({ visible, setVisible, info }) => {
             <br />
             <br />
             <span className="text-teal-500">&#125;</span>
-          </pre>
-        </div>
-
-        {/* <div className="mt-4 p-4 bg-neutral-200 dark:bg-neutral-900 rounded-md">
-          <div className="flex gap-2 mb-4">
-            <span className="font-semibold">[</span>
-            {tags.map((tag, idx) => (
-              <Fragment key={idx}>
-                <div className="text-sm my-auto rounded-md text-neutral-50 bg-neutral-800 px-2">
-                  {tag}
-                </div>
-                <span className={idx + 1 === tags.length && "hidden"}>,</span>
-              </Fragment>
-            ))}
-            <span className="font-semibold">]</span>
           </div>
-          <p className="text-sm">{description}</p>
-        </div> */}
+        </div>
       </div>
     </div>
   );
