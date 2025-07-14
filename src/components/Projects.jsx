@@ -24,14 +24,13 @@ const Projects = () => {
       )}
       <section className="section" id="projects">
         <div className="grid place-items-center">
-          <div className="text-center mb-8 w-auto md:w-[50%] mx-auto">
+          <div className="text-center mb-8 w-auto md:w-[45%] mx-auto">
             <h2 className="font-semibold text-lg mb-2" data-aos="fade-up">
               PROJECTS
             </h2>
             <p data-aos="fade-up">
               These are some of the personal and school projects that I built to
-              practice my skills using different scripts and programming
-              languages.
+              practice my skills.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-5 justify-evenly">
@@ -47,7 +46,7 @@ const Projects = () => {
                       setShowDialog(true);
                       setSelectedProjectInfo(project);
                     }}
-                    className="group-hover:opacity-100 opacity-0 absolute inset-0 duration-300 grid place-items-center bg-black/60"
+                    className="group-hover:opacity-100 opacity-0 absolute inset-0 duration-300 grid place-items-center bg-neutral-950/60"
                   >
                     <div className="text-4xl text-white font-semibold">
                       <GoZoomIn />
@@ -55,7 +54,7 @@ const Projects = () => {
                   </button>
                   <img src={project.image} alt="project-image" />
                 </div>
-                <div className="p-3 bg-white dark:bg-slate-700">
+                <div className="p-3 bg-white dark:bg-neutral-800">
                   <h5 className="font-semibold mb-2 text-sm">
                     {project.title}
                   </h5>
@@ -63,7 +62,7 @@ const Projects = () => {
                     {project.tags.map((tag, index) => (
                       <div
                         key={index}
-                        className="text-xs bg-gray-200 text-slate-800 dark:bg-slate-600 dark:text-slate-100 py-1 px-2 rounded-lg cursor-pointer duration-200 ease-in-out hover:bg-gray-700 dark:hover:bg-slate-100 hover:text-white dark:hover:text-black"
+                        className="text-xs bg-gray-200 text-neutral-800 dark:bg-neutral-600 dark:text-neutral-100 py-1 px-2 rounded-lg cursor-pointer duration-200 ease-in-out hover:bg-gray-700 dark:hover:bg-neutral-100 hover:text-white dark:hover:text-black"
                       >
                         {tag}
                       </div>

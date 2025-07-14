@@ -13,7 +13,7 @@ const Skills = () => {
           projects.
         </p>
       </div>
-      <div className="mt-8 flex flex-wrap justify-center gap-8 md:w-[60%] mx-auto">
+      <div className="mt-8 flex flex-wrap justify-center gap-4 md:gap-8 md:w-[60%] mx-auto">
         {skills.map((skill, idx) => (
           <div
             key={idx}

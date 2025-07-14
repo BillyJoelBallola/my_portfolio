@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Fragment, useEffect } from "react";
 
 const CustomDialog = ({ visible, setVisible, info }) => {
   const { title, description, image, tags } = info;
@@ -19,11 +19,11 @@ const CustomDialog = ({ visible, setVisible, info }) => {
 
   return (
     <div
-      className="fixed grid place-items-center h-screen w-screen bg-black/80 backdrop-blur-sm z-50 pointer-events-auto"
+      className="fixed grid place-items-center h-screen w-screen bg-neutral-950/80 backdrop-blur-sm z-50 pointer-events-auto"
       onClick={() => setVisible(false)}
     >
       <div
-        className="bg-white dark:bg-slate-800 text-black dark:text-white rounded-lg p-6 absolute z-30 w-10/12 md:w-2/3 lg:w-1/2"
+        className="bg-white dark:bg-neutral-800 text-black dark:text-white rounded-lg p-4 md:p-6 absolute z-30 w-10/12 md:w-2/3 lg:w-1/2"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between">
@@ -32,22 +32,56 @@ const CustomDialog = ({ visible, setVisible, info }) => {
             &times;
           </button>
         </div>
-        <div className="flex rounded-lg overflow-hidden mt-4 border border-slate-200 dark:border-slate-700">
+        <div className="flex rounded-lg overflow-hidden mt-4">
           <img src={image} alt="project image" className="object-cover" />
         </div>
-        <div className="mt-4">
-          <div className="flex gap-2 mb-4 text-sm mt-4 text-slate-800">
-            {tags.map((tag, idx) => (
-              <div
-                key={idx}
-                className="text-sm rounded-md bg-slate-800 text-slate-50 dark:text-slate-800 dark:bg-slate-50 px-2"
-              >
-                {tag}
-              </div>
+        <div className="mt-4 p-4 bg-neutral-100 dark:bg-neutral-900 rounded-md">
+          <pre className="font-mono text-sm whitespace-pre-wrap break-words overflow-x-auto">
+            <span className="text-teal-500">&#123;</span>
+            <br />
+            <br />
+            <span className="text-green-700 dark:text-yellow-500">tag: </span>
+            <span className="text-orange-500 dark:text-blue-500">&#91;</span>
+            {tags.map((tag, index) => (
+              <>
+                <span className="dark:text-orange-500 text-blue-500">
+                  "{tag}"
+                </span>
+                {index < tags.length - 1 && (
+                  <span className="text-gray-400">, </span>
+                )}
+              </>
             ))}
+            <span className="text-orange-500 dark:text-blue-500">&#93;</span>
+            <span className="text-green-700 dark:text-yellow-500">,</span>
+            <br />
+            <span className="text-green-700 dark:text-yellow-500">
+              description:{" "}
+            </span>
+            <span className="text-red-500 dark:text-cyan-400">
+              "{description.replace(/\n/g, " ")}"
+            </span>
+            <br />
+            <br />
+            <span className="text-teal-500">&#125;</span>
+          </pre>
+        </div>
+
+        {/* <div className="mt-4 p-4 bg-neutral-200 dark:bg-neutral-900 rounded-md">
+          <div className="flex gap-2 mb-4">
+            <span className="font-semibold">[</span>
+            {tags.map((tag, idx) => (
+              <Fragment key={idx}>
+                <div className="text-sm my-auto rounded-md text-neutral-50 bg-neutral-800 px-2">
+                  {tag}
+                </div>
+                <span className={idx + 1 === tags.length && "hidden"}>,</span>
+              </Fragment>
+            ))}
+            <span className="font-semibold">]</span>
           </div>
           <p className="text-sm">{description}</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import diary from "../assets/memories.jpg";
 import harmony from "../assets/harmony.jpg";
-import sms from "../assets/info-system.jpg";
 import rbim from "../assets/rbim.png";
 import linkSharing from "../assets/link_sharing.png";
 import trackr from "../assets/trackr.png";

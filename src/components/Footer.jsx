@@ -13,32 +13,32 @@ const Footer = () => {
           accounts or email me through my g-mail.
         </p>
       </div>
-      <div className="flex justify-center gap-10">
+      <div className="flex justify-center gap-5 md:gap-10">
         <a
           href="https://www.facebook.com/billyjoel.ballola"
-          className="social-media"
+          className="social-media group"
           data-aos="zoom-in"
           target="_blank"
           rel="noreferrer"
         >
-          <FaFacebookSquare />
+          <FaFacebookSquare className="group-hover:text-neutral-50" />
         </a>
         <a
           href="https://www.instagram.com/blly_joel"
-          className="social-media"
+          className="social-media group"
           data-aos="zoom-in"
           target="_blank"
           rel="noreferrer"
         >
-          <FaInstagram />
+          <FaInstagram className="group-hover:text-neutral-50" />
         </a>
         <a
           href="mailto:billyjoelballola27@gmail.com"
-          className="social-media"
+          className="social-media group"
           data-aos="zoom-in"
           rel="noreferrer"
         >
-          <MdOutlineMailOutline />
+          <MdOutlineMailOutline className="group-hover:text-neutral-50" />
         </a>
       </div>
     </section>

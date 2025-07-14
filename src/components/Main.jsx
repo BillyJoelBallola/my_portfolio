@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 const Main = () => {
   return (
-    <main className="grid gap-40 w-full pb-[150px] font-poppins dark:text-slate-100">
+    <main className="grid gap-40 w-full pb-[150px] font-poppins dark:text-neutral-100">
       <Header />
       <About />
       <Skills />
