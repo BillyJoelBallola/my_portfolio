@@ -36,7 +36,7 @@ const CustomDialog = ({ visible, setVisible, info }) => {
           <img
             src={image}
             alt="project image"
-            className="object-cover object-center w-full aspect-auto"
+            className="object-contain w-full aspect-auto"
           />
         </div>
         <div className="mt-4 p-4 bg-neutral-200/50 dark:bg-neutral-900 rounded-md">

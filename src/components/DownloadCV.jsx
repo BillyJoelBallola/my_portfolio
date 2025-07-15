@@ -14,12 +14,12 @@ const DownloadCV = () => {
       {showToolTip && (
         <div
           data-aos="zoom-in-right"
-          className="flex gap-8 absolute whitespace-nowrap -top-8 left-9 rounded-md px-2 py-1 z-20 bg-orange-500 dark:bg-sky-600 text-white shadow-md border dark:border-0"
+          className="flex gap-4 absolute whitespace-nowrap -top-12 left-6 md:-top-6 md:left-8 rounded-md px-2 py-1 z-20 bg-orange-500 dark:bg-sky-600 text-white shadow-md border dark:border-0"
         >
-          <span className="text-sm">
-            You can download my CV
-            <br />
-            just by clicking the icon.
+          <span className="text-xs">
+            You can download <br className="block md:hidden" /> my CV{" "}
+            <br className="hidden md:block" /> just by{" "}
+            <br className="block md:hidden" /> clicking the icon.
           </span>
           <button onClick={() => setShowToolTip(false)}>
             <IoMdClose />
