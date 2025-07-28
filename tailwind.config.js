@@ -9,12 +9,12 @@ export default {
         satisfy: ["Satisfy", "cursive"],
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 15s linear infinite",
+        blur: "blur 150ms linear forward",
       },
       keyframes: {
-        "infinite-scroll": {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-80%)" },
+        blur: {
+          "0%": { filter: "blur(5px)" },
+          "100%": { filter: "blur(0px)" },
         },
       },
     },

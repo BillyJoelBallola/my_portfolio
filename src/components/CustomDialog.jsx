@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from "react";
+import { useEffect } from "react";
 
 const CustomDialog = ({ visible, setVisible, info }) => {
   const { title, description, image, tags } = info;
@@ -19,56 +19,65 @@ const CustomDialog = ({ visible, setVisible, info }) => {
 
   return (
     <div
-      className="fixed grid place-items-center h-screen w-screen bg-neutral-950/80 backdrop-blur-sm z-50 pointer-events-auto"
+      className="fixed flex flex-col h-screen w-screen bg-neutral-950/80 backdrop-blur-sm z-50 pointer-events-auto animate-blur"
       onClick={() => setVisible(false)}
     >
+      <div className="pt-2 px-2 hidden md:block self-end">
+        <button
+          className="text-3xl h-fit text-neutral-50"
+          onClick={() => setVisible(false)}
+        >
+          &times;
+        </button>
+      </div>
       <div
-        className="bg-white dark:bg-neutral-800 text-black dark:text-white rounded-lg p-4 md:p-6 absolute z-30 w-10/12 md:w-2/3 lg:w-1/2"
+        className="overflow-auto bg-neutral-50 dark:bg-neutral-900 text-neutral-900 dark:text-white md:rounded-t-xl flex flex-col w-full h-full pb-8 md:py-16"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center justify-between">
-          <h3 className="text-lg font-semibold">{title}</h3>
-          <button className="text-3xl" onClick={() => setVisible(false)}>
+        <div className="pt-4 px-4 md:hidden self-end">
+          <button
+            className="text-3xl h-fit dark:text-neutral-50"
+            onClick={() => setVisible(false)}
+          >
             &times;
           </button>
         </div>
-        <div className="flex rounded-lg overflow-hidden mt-4">
-          <img
-            src={image}
-            alt="project image"
-            className="object-contain w-full aspect-auto"
-          />
-        </div>
-        <div className="mt-4 p-4 bg-neutral-200/50 dark:bg-neutral-900 rounded-md">
-          <div className="text-sm whitespace-pre-wrap break-words overflow-x-auto">
-            <span className="text-teal-500">&#123;</span>
-            <br />
-            <br />
-            <span className="text-green-700 dark:text-yellow-500">tags: </span>
-            <span className="text-orange-500 dark:text-blue-500">&#91;</span>
-            {tags.map((tag, index) => (
-              <>
-                <span className="dark:text-orange-500 text-blue-500">
-                  "{tag}"
-                </span>
-                {index < tags.length - 1 && (
-                  <span className="text-gray-400">, </span>
-                )}
-              </>
-            ))}
-            <span className="text-orange-500 dark:text-blue-500">&#93;</span>
-            <span className="text-green-700 dark:text-yellow-500">,</span>
-            <br />
-            <span className="text-green-700 dark:text-yellow-500">
-              description:{" "}
-            </span>
-            <span className="text-red-500 dark:text-cyan-400">
-              "{description.replace(/\n/g, " ")}"
-            </span>
-            <br />
-            <br />
-            <span className="text-teal-500">&#125;</span>
+
+        <div className="flex flex-col gap-4">
+          <div className="px-4 md:px-32 lg:px-64">
+            <h3 className="text-xl md:text-2xl font-semibold">{title}</h3>
           </div>
+          <div className="px-0 md:px-32 lg:px-64 bg-neutral-200 dark:bg-neutral-800/50 dark:md:bg-transparent md:bg-transparent">
+            <div className="rounded-lg overflow-hidden py-8 md:py-0">
+              <img
+                src={image}
+                alt="project image"
+                className="object-contain size-full"
+              />
+            </div>
+          </div>
+          <div className="pt-4 px-4 md:px-40 lg:px-72 xl:px-80 grid gap-8">
+            <div className="grid gap-4">
+              <h4 className="font-semibold">About the project</h4>
+              <p className="text-sm">{description}</p>
+            </div>
+            <div className="grid gap-4">
+              <h4 className="font-semibold">Tech Stack</h4>
+              <div className="flex items-center gap-2">
+                {tags.map((tag, idx) => (
+                  <div key={idx}>
+                    <span className="dark:text-orange-500 text-blue-500">
+                      {tag}
+                    </span>
+                    {idx < tags.length - 1 && (
+                      <span className="text-gray-400">, </span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="pt-4 px-4 md:px-40 lg:px-72 grid gap-4"></div>
         </div>
       </div>
     </div>

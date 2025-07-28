@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import projects from "../data/projects";
 import { AiFillGithub } from "react-icons/ai";
 import { GoZoomIn } from "react-icons/go";
