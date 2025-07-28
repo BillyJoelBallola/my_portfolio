@@ -31,7 +31,7 @@ const CustomDialog = ({ visible, setVisible, info }) => {
         </button>
       </div>
       <div
-        className="overflow-auto bg-neutral-50 dark:bg-neutral-900 text-neutral-900 dark:text-white md:rounded-t-xl flex flex-col w-full h-full pb-8 md:py-16"
+        className="overflow-auto bg-neutral-50 dark:bg-neutral-800 text-neutral-900 dark:text-white md:rounded-t-xl flex flex-col w-full h-full pb-8 md:py-16"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="pt-4 px-4 md:hidden self-end">
@@ -47,7 +47,7 @@ const CustomDialog = ({ visible, setVisible, info }) => {
           <div className="px-4 md:px-32 lg:px-64">
             <h3 className="text-xl md:text-2xl font-semibold">{title}</h3>
           </div>
-          <div className="px-0 md:px-32 lg:px-64 bg-neutral-200 dark:bg-neutral-800/50 dark:md:bg-transparent md:bg-transparent">
+          <div className="px-0 md:px-32 lg:px-64 bg-neutral-200 dark:bg-neutral-900/50 dark:md:bg-transparent md:bg-transparent">
             <div className="rounded-lg overflow-hidden py-8 md:py-0">
               <img
                 src={image}
