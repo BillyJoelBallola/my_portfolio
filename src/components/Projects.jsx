@@ -33,11 +33,11 @@ const Projects = () => {
               practice my skills.
             </p>
           </div>
-          <div className="flex flex-wrap items-center gap-5 justify-evenly">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
             {projects.map((project, index) => (
               <div
                 data-aos="zoom-out-up"
-                className="w-[300px] shadow-lg rounded-lg overflow-hidden"
+                className="shadow-lg rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800"
                 key={index}
               >
                 <div className="overflow-hidden relative group cursor-pointer">
@@ -54,7 +54,7 @@ const Projects = () => {
                   </button>
                   <img src={project.image} alt="project-image" />
                 </div>
-                <div className="p-3 bg-white dark:bg-neutral-800">
+                <div className="p-3">
                   <h5 className="font-semibold mb-2 text-sm">
                     {project.title}
                   </h5>
@@ -77,10 +77,10 @@ const Projects = () => {
               href="https://github.com/BillyJoelBallola"
               target="_blank"
               rel="noreferrer"
-              className="mx-auto border-2 border-orange-500 text-orange-500 dark:border-sky-500 rounded-full p-2 px-4 cursor-pointer dark:text-sky-500 hover:bg-orange-500 dark:hover:bg-sky-500 hover:text-white dark:hover:text-white duration-150 shadow-md flex gap-2"
+              className="text-sm mx-auto border-2 border-orange-500 text-orange-500 dark:border-sky-500 rounded-full p-2 px-4 cursor-pointer dark:text-sky-500 hover:bg-orange-500 dark:hover:bg-sky-500 hover:text-white dark:hover:text-white duration-150 shadow-md flex items-center gap-2"
             >
               <AiFillGithub className="w-6 h-6" />
-              See More Projects
+              <span className="-mb-1">See More Projects</span>
             </a>
           </div>
         </div>

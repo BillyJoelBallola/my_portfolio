@@ -40,5 +40,5 @@ body {
 }
 
 .section {
-  @apply mx-auto w-[94%] md:w-[90%] lg:w-[75%];
+  @apply mx-auto w-[94%] md:w-[90%] lg:w-[75%] max-w-[1024px];
 }
