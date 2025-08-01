@@ -4,13 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-*,
-html,
-body {
+* {
   scroll-behavior: smooth;
   scroll-padding-top: 180px;
-  /* #020617 dark */
-  /* #f8fafc light */
 }
 
 ::-webkit-scrollbar {
