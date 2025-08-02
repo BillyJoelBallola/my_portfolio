@@ -1,7 +1,8 @@
 import { useEffect } from "react";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const CustomDialog = ({ visible, setVisible, info }) => {
-  const { title, description, image, tags } = info;
+  const { title, description, image, tags, demoURL } = info;
 
   useEffect(() => {
     if (visible) {
@@ -44,8 +45,18 @@ const CustomDialog = ({ visible, setVisible, info }) => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <div className="px-4 md:px-32 lg:px-64">
+          <div className="px-4 md:px-32 lg:px-64 flex items-center gap-4">
             <h3 className="text-xl md:text-2xl font-semibold">{title}</h3>
+            {demoURL && (
+              <a
+                href={demoURL}
+                target="_blank"
+                className="bg-transparent hover:bg-neutral-900 dark:hover:bg-neutral-50 hover:text-neutral-50 dark:hover:text-neutral-900 duration-150 ease-in-out flex items-center gap-2 border border-neutral-500 py-1 px-3 rounded-full"
+              >
+                <FaArrowUpRightFromSquare className="size-3" />
+                <span className="mt-0.5 text-sm">Live Demo</span>
+              </a>
+            )}
           </div>
           <div className="px-0 md:px-32 lg:px-64 bg-neutral-200 dark:bg-neutral-900/50 dark:md:bg-transparent md:bg-transparent">
             <div className="rounded-lg overflow-hidden py-8 md:py-0">

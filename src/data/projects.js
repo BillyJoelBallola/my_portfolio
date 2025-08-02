@@ -2,11 +2,19 @@ import diary from "../assets/memories.jpg";
 import harmony from "../assets/harmony.jpg";
 import rbim from "../assets/rbim.png";
 import linkSharing from "../assets/link_sharing.png";
+import gearup from "../assets/gearup.png";
 import trackr from "../assets/trackr.png";
-import pluma from "../assets/pluma.png";
 import readingRealm from "../assets/reading_realm.png";
 
 const projects = [
+  {
+    title: "Gear Up",
+    description:
+      "Gear Up is a sleek, responsive landing page built with ReactJS and Tailwind CSS, showcasing modern UI design and smooth animations. Designed as a portfolio piece, it demonstrates component-driven development, utility-first styling, and a clean user experience ideal for promoting products or services.",
+    image: gearup,
+    tags: ["ReactJS", "Typescript", "TailwindCSS"],
+    demoURL: "https://gear-up-phi.vercel.app",
+  },
   {
     title: "Expense Tracker App",
     description:
@@ -20,13 +28,6 @@ const projects = [
       "Reading Realm is a web-based digital library platform that allows users to explore and read a wide range of books online. With a simple and user-friendly interface built using ReactJS, the app consumes a RESTful API to fetch and organize content dynamically. It aims to promote reading by providing easy access to literature in a clean and engaging environment.",
     image: readingRealm,
     tags: ["ReactJS", "RestAPI"],
-  },
-  {
-    title: "Pluma",
-    description:
-      "Pluma is a modern, minimalist note-taking web application crafted for productivity and ease of use. Developed with Next.js and TypeScript, it allows users to create, edit, and manage their notes seamlessly. The application also uses PostgreSQL for persistent data storage and is designed with a sleek UI to enhance the user experience.",
-    image: pluma,
-    tags: ["NextJS", "Typescript", "Postgres"],
   },
   {
     title: "Links Sharing",
@@ -49,13 +50,6 @@ const projects = [
     image: harmony,
     tags: ["PHP", "MySQL", "JQUERY"],
   },
-  // {
-  //   title: "School Information System",
-  //   description:
-  //     "This School Information System is a comprehensive academic records management platform developed using Flask (Python), HTML, CSS, and MySQL. It handles student information, grades, and class schedules. The system aims to improve administrative workflows and ensure organized recordkeeping for educational institutions.",
-  //   image: sms,
-  //   tags: ["HTML", "CSS", "PYTHON", "MySQL"],
-  // },
   {
     title: "RBIM System",
     description:
