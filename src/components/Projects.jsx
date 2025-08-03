@@ -40,7 +40,7 @@ const Projects = () => {
                 className="shadow-lg rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800"
                 key={index}
               >
-                <div className="overflow-hidden sm:h-[165px] max-h-[122px] relative group cursor-pointer">
+                <div className="overflow-hidden h-full sm:h-[165px] max-h-[122px] relative group cursor-pointer">
                   <button
                     onClick={() => {
                       setShowDialog(true);
