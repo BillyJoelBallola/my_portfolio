@@ -1,5 +1,5 @@
-import diary from "../assets/memories.jpg";
 import harmony from "../assets/harmony.jpg";
+import sneakerdrop from "../assets/sneaker-drop.png";
 import rbim from "../assets/rbim.png";
 import linkSharing from "../assets/link_sharing.png";
 import gearup from "../assets/gearup.png";
@@ -7,6 +7,14 @@ import trackr from "../assets/trackr.png";
 import readingRealm from "../assets/reading_realm.png";
 
 const projects = [
+  {
+    title: "Sneaker Drop",
+    description:
+      "Sneaker Drop is a minimalist single-page product view showcasing a single sneaker with an add-to-cart feature. Built with ReactJS, TypeScript, Tailwind CSS, and Redux, it demonstrates state management, utility-first styling, and clean UI design in a simple e-commerce flow.",
+    image: sneakerdrop,
+    tags: ["ReactJS", "Typescript", "Redux", "TailwindCSS"],
+    demoURL: "https://sneaker-drop.vercel.app",
+  },
   {
     title: "Gear Up",
     description:
@@ -35,13 +43,6 @@ const projects = [
       "Links Sharing is a personal project that allows users to create and customize their own link-sharing profiles—similar to services like Linktree. Built with ReactJS and styled using TailwindCSS, the application provides a sleek and fast interface where users can manage links to their social media, websites, or other content hubs.",
     image: linkSharing,
     tags: ["ReactJS", "TailwindCSS"],
-  },
-  {
-    title: "Memories Diary Website",
-    description:
-      "Memories is a personal online diary application developed using PHP, jQuery, HTML, and CSS. It allows users to securely log their daily thoughts and activities, with options to categorize and search entries. The application offers a nostalgic and user-centric design, ideal for maintaining a digital journal with ease and privacy.",
-    image: diary,
-    tags: ["PHP", "SQL", "JQUERY"],
   },
   {
     title: "Harmony's Kitchen",
