@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GrDocumentUser } from "react-icons/gr";
 import { IoMdClose } from "react-icons/io";
-import cvFile from "../assets/BALLOLA_BILLY_JOEL_RESUME.pdf";
+import cvFile from "../assets/BILLY_JOEL_BALLOLA-WEBDEV.pdf";
 
 const DownloadCV = () => {
   const [showToolTip, setShowToolTip] = useState(true);
