@@ -5,8 +5,17 @@ import linkSharing from "../assets/link_sharing.png";
 import gearup from "../assets/gearup.png";
 import trackr from "../assets/trackr.png";
 import readingRealm from "../assets/reading_realm.png";
+import invio from "../assets/invio.png";
 
 const projects = [
+  {
+    title: "Invio",
+    description:
+      "A modern AI-assisted invoice generation tool designed to simplify billing workflows. Invio allows users to create, manage, and export professional invoices with ease. Powered by Next.js, Prisma ORM, TailwindCSS, and ShadCN UI for a clean and responsive experience.",
+    image: invio,
+    tags: ["NextJS", "Prisma", "TailwindCSS", "ShadCN"],
+    demoURL: "https://use-invio.vercel.app",
+  },
   {
     title: "Sneaker Drop",
     description:
