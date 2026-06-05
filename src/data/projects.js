@@ -6,12 +6,21 @@ import gearup from "../assets/gearup.png";
 import trackr from "../assets/trackr.png";
 import readingRealm from "../assets/reading_realm.png";
 import invio from "../assets/invio.png";
+import resumiq from "../assets/resumiq.png";
 
 const projects = [
   {
+    title: "Resumiq",
+    description:
+      "An AI-powered resume reviewer that analyzes your resume and provides instant, structured feedback. Resumiq scores your resume out of 100, highlights strengths and weaknesses, identifies missing keywords, and gives section-by-section suggestions to help you land more interviews. Powered by Next.js, Prisma ORM, Google Gemini AI, TailwindCSS, and ShadCN UI.",
+    image: resumiq,
+    tags: ["NextJS", "Prisma", "TailwindCSS", "ShadCN", "Gemini AI"],
+    demoURL: "https://use-resumiq.vercel.app",
+  },
+  {
     title: "Invio",
     description:
-      "A modern AI-assisted invoice generation tool designed to simplify billing workflows. Invio allows users to create, manage, and export professional invoices with ease. Powered by Next.js, Prisma ORM, TailwindCSS, and ShadCN UI for a clean and responsive experience.",
+      "A full-stack invoice management SaaS that lets freelancers create, manage, and send professional invoices to clients. Features include PDF generation, email delivery, client management, status tracking, and a revenue dashboard. Powered by Next.js, Prisma ORM, TailwindCSS, and ShadCN UI.",
     image: invio,
     tags: ["NextJS", "Prisma", "TailwindCSS", "ShadCN"],
     demoURL: "https://use-invio.vercel.app",
