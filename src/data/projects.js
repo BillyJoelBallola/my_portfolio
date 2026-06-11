@@ -15,7 +15,7 @@ const projects = [
       "A real-time project management tool built for teams. Trakbord lets you organize work across workspaces, projects, and kanban boards with live drag-and-drop updates powered by Pusher WebSockets. Features include role-based access control, task detail modals with comments, list and board views, and member management. Powered by Next.js, Prisma ORM, TailwindCSS, ShadCN UI, and Pusher.",
     image: trakbord,
     tags: ["NextJS", "Prisma", "TailwindCSS", "ShadCN", "Pusher", "dnd-kit"],
-    demoURL: "https://use-trakbord.vercel.app",
+    // demoURL: "https://use-trakbord.vercel.app",
   },
   {
     title: "Invio",
@@ -23,7 +23,7 @@ const projects = [
       "A full-stack invoice management SaaS that lets freelancers create, manage, and send professional invoices to clients. Features include PDF generation, email delivery, client management, status tracking, and a revenue dashboard. Powered by Next.js, Prisma ORM, TailwindCSS, and ShadCN UI.",
     image: invio,
     tags: ["NextJS", "Prisma", "TailwindCSS", "ShadCN"],
-    demoURL: "https://use-invio.vercel.app",
+    // demoURL: "https://use-invio.vercel.app",
   },
   {
     title: "Sneaker Drop",
