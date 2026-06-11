@@ -74,7 +74,7 @@ const CustomDialog = ({ visible, setVisible, info }) => {
             </div>
             <div className="grid gap-4">
               <h4 className="font-semibold">Tech Stack</h4>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 {tags.map((tag, idx) => (
                   <div key={idx}>
                     <span className="dark:text-orange-500 text-blue-500">
