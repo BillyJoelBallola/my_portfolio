@@ -6,7 +6,7 @@ const About = () => {
           ABOUT ME
         </h2>
         <p data-aos="fade-up">
-          Hi 👋! I am{" "}
+          Hi👋! I am{" "}
           <span className="text-orange-500 dark:text-sky-500">
             Billy Joel Ballola
           </span>

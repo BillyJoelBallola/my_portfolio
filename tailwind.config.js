@@ -5,6 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        spaceGrotesk: ["Space Grotesk", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         satisfy: ["Satisfy", "cursive"],
       },

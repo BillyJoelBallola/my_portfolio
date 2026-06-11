@@ -1,21 +1,21 @@
-import harmony from "../assets/harmony.jpg";
 import sneakerdrop from "../assets/sneaker-drop.png";
-import rbim from "../assets/rbim.png";
 import linkSharing from "../assets/link_sharing.png";
+import readingRealm from "../assets/reading_realm.png";
+import trakbord from "../assets/trakbord.png";
+import resumiq from "../assets/resumiq.png";
 import gearup from "../assets/gearup.png";
 import trackr from "../assets/trackr.png";
-import readingRealm from "../assets/reading_realm.png";
 import invio from "../assets/invio.png";
-import resumiq from "../assets/resumiq.png";
+import rbim from "../assets/rbim.png";
 
 const projects = [
   {
-    title: "Resumiq",
+    title: "Trakbord",
     description:
-      "An AI-powered resume reviewer that analyzes your resume and provides instant, structured feedback. Resumiq scores your resume out of 100, highlights strengths and weaknesses, identifies missing keywords, and gives section-by-section suggestions to help you land more interviews. Powered by Next.js, Prisma ORM, Google Gemini AI, TailwindCSS, and ShadCN UI.",
-    image: resumiq,
-    tags: ["NextJS", "Prisma", "TailwindCSS", "ShadCN", "Gemini AI"],
-    demoURL: "https://use-resumiq.vercel.app",
+      "A real-time project management tool built for teams. Trakbord lets you organize work across workspaces, projects, and kanban boards with live drag-and-drop updates powered by Pusher WebSockets. Features include role-based access control, task detail modals with comments, list and board views, and member management. Powered by Next.js, Prisma ORM, TailwindCSS, ShadCN UI, and Pusher.",
+    image: trakbord,
+    tags: ["NextJS", "Prisma", "TailwindCSS", "ShadCN", "Pusher", "dnd-kit"],
+    demoURL: "https://use-trakbord.vercel.app",
   },
   {
     title: "Invio",
@@ -61,13 +61,6 @@ const projects = [
       "Links Sharing is a personal project that allows users to create and customize their own link-sharing profiles—similar to services like Linktree. Built with ReactJS and styled using TailwindCSS, the application provides a sleek and fast interface where users can manage links to their social media, websites, or other content hubs.",
     image: linkSharing,
     tags: ["ReactJS", "TailwindCSS"],
-  },
-  {
-    title: "Harmony's Kitchen",
-    description:
-      "Harmony's Kitchen is a promotional website created as a school project to showcase the culinary products and services offered by the fictional business. Built using PHP, MySQL, and jQuery, the site features a responsive layout, product listings, and an admin interface for content management. It simulates a real-world food service site experience.",
-    image: harmony,
-    tags: ["PHP", "MySQL", "JQUERY"],
   },
   {
     title: "RBIM System",

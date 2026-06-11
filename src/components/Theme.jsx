@@ -3,38 +3,52 @@ import { LuSunMedium } from "react-icons/lu";
 import { PiMoonStars } from "react-icons/pi";
 
 const Theme = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const activeTheme = localStorage.getItem("colorTheme");
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.getItem("colorTheme") === "dark",
+  );
 
-  if (localStorage.getItem("colorTheme") === "dark") {
-    document.documentElement.classList.add(localStorage.getItem("colorTheme"));
-  } else {
-    localStorage.setItem("colorTheme", "light");
-  }
+  useEffect(() => {
+    localStorage.setItem("colorTheme", isDarkMode ? "dark" : "light");
+
+    document.documentElement.classList.toggle("dark", isDarkMode);
+  }, [isDarkMode]);
 
   const turnOnDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-
-    if (
-      localStorage.getItem("colorTheme") === "light" &&
-      isDarkMode === false
-    ) {
-      localStorage.setItem("colorTheme", "dark");
-      document.documentElement.classList.add("dark");
-    } else {
-      localStorage.setItem("colorTheme", "light");
-      document.documentElement.classList.remove("dark");
-    }
+    setIsDarkMode((prev) => !prev);
   };
 
   return (
-    <button
-      data-aos="zoom-in"
-      className="shadow-sm fixed z-50 right-5 lg:right-10 top-8 text-2xl bg-orange-500 dark:bg-sky-500 text-orange-100 dark:text-sky-950 p-2 rounded-full duration-200"
-      onClick={turnOnDarkMode}
-    >
-      {activeTheme === "light" ? <LuSunMedium /> : <PiMoonStars />}
-    </button>
+    <label className="fixed z-50 right-5 lg:right-10 top-8 inline-flex items-center cursor-pointer">
+      <input
+        type="checkbox"
+        className="sr-only peer"
+        checked={isDarkMode}
+        onChange={turnOnDarkMode}
+      />
+      <div
+        className="
+          relative
+          w-12 h-8 rounded-full 
+          bg-gradient-to-r from-yellow-300 to-orange-400 
+          peer-checked:from-sky-400 peer-checked:to-blue-500 
+          transition-all duration-500 
+          after:content-['☀️'] 
+          after:absolute 
+          after:top-1 
+          after:left-1
+          after:bg-white 
+          after:rounded-full 
+          after:size-6 
+          after:flex 
+          after:items-center 
+          after:justify-center 
+          after:transition-all 
+          after:duration-500 
+          peer-checked:after:translate-x-4
+          peer-checked:after:content-['🌙'] 
+          after:shadow-md"
+      />
+    </label>
   );
 };
 
