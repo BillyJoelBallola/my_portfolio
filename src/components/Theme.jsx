@@ -36,7 +36,6 @@ const Theme = () => {
           after:absolute 
           after:top-1 
           after:left-1
-          after:pt-[0.9px]
           after:bg-white 
           after:rounded-full 
           after:size-6

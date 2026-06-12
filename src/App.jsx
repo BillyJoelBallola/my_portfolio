@@ -6,7 +6,7 @@ import DownloadCV from "./components/DownloadCV";
 
 const App = () => {
   return (
-    <div className="font-inter main-bg w-full relative font-mono overflow-x-hidden dark:bg-neutral-900">
+    <div className="font-inter main-bg w-full relative overflow-x-hidden dark:bg-neutral-900">
       <div className="text-neutral-950 dark:text-neutral-50 bg-neutral-50/20 dark:bg-neutral-900/70 backdrop-blur-5">
         <Scroll />
         <DownloadCV />
