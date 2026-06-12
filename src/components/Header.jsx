@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <section id="header" className="relative h-screen overflow-hidden">
       {/* pattern */}
-      <div className="absolute inset-0 h-full w-full [&>div]:absolute [&>div]:h-full [&>div]:w-full [&>div]:bg-[radial-gradient(#858585_0.5px,transparent_1px)] [&>div]:[background-size:16px_16px] [&>div]:[mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_0%,transparent_100%)]">
+      <div className="absolute inset-0 h-full w-full [&>div]:absolute [&>div]:h-full [&>div]:w-full [&>div]:bg-[radial-gradient(#858585_0.2px,transparent_1px)] [&>div]:[background-size:16px_16px] [&>div]:[mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_0%,transparent_100%)]">
         <div />
       </div>
 
